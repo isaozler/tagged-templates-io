@@ -13,7 +13,7 @@ taggedTemplate(`template-string`, values, conditions?);
 
 ## Basic
 ```
-taggedTemplate(`Hello ${0}`, 'world');
+taggedTemplate(`Hello {0}`, 'world');
 
 // Hello World
 
@@ -51,7 +51,7 @@ const isClient = true;
 const asCol = 'name';
 const from = ['clientTable', 'relationTable'];
 const fromCondition = isClient;
-const where = `${as} = ${42}`;
+const where = `${asCol} = ${42}`;
 const start = 0, end = 10;
 
 taggedTemplate(`
@@ -75,7 +75,7 @@ SELECT firstname AS name
 ```
 
 
-## HTML
+## Render HTML
 
 ```
 
