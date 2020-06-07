@@ -48,29 +48,21 @@ const className = taggedTemplate(
 ## SQL
 ```
 const isClient = true;
-const asCol = 'name';
+const as = 'age';
 const from = ['clientTable', 'relationTable'];
 const fromCondition = isClient;
-const where = `${asCol} = ${42}`;
+const where = `${as} = ${42}`;
 const start = 0, end = 10;
 
-taggedTemplate(`
+const a = taggedTemplate(`
   SELECT {select} AS {as}
   FROM {from}
   WHERE {where}
   LIMIT {start}, {end}
 `,
-  { select: 'firstname', as: asCol, from, where, start, end },
+  { select: 'age_col', as, from, where, start, end },
   { from: fromCondition },
-);
-
-
-// Outputs
-
-SELECT firstname AS name
-  FROM clientTable
-  WHERE name = 42
-  LIMIT 0, 10
+)
 
 ```
 
