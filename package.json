@@ -1,6 +1,6 @@
 {
   "name": "tagged-templates-io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable dynamic tagged templates",
   "main": "src/index",
   "scripts": {
@@ -21,6 +21,15 @@
     "es6",
     "es2015"
   ],
-  "author": "Isa Ozler",
-  "license": "MIT"
+  "author": "Isa Ozler <isaozler@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/isaozler/tagged-templates-io",
+  "bugs": {
+    "url": "https://github.com/isaozler/tagged-templates-io/issues",
+    "email": "isaozler@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isaozler/tagged-templates-io"
+  }
 }
