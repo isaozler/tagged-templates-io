@@ -1,0 +1,26 @@
+{
+  "name": "tagged-templates-io",
+  "version": "1.0.0",
+  "description": "Reusable dynamic tagged templates",
+  "main": "src/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "multiline-strings",
+    "string-substitution",
+    "indentation",
+    "inline",
+    "html-template",
+    "tagged-template",
+    "tagged-template-literals",
+    "composition",
+    "composable",
+    "abstraction",
+    "javascript",
+    "es6",
+    "es2015"
+  ],
+  "author": "Isa Ozler",
+  "license": "MIT"
+}
