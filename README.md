@@ -23,6 +23,8 @@ taggedTemplate(`Hello {target}`, { target: 'World'});
 
 taggedTemplate(`Hello {target}`, { target: ['World', 'Mars']}, { target: false });
 
+// Hello Mars
+
 ```
 
 ## Html class names
@@ -97,18 +99,24 @@ const result = taggedTemplate(
         }, '')}
     </ul>
   `,
-  ['list__wrapper', [{ id: 1, label: 'Item 1' }, { id: 2, label: 'Item 2' }], ['list__item','list__item--active'], activeIndex]
+  [
+    'list__wrapper',
+    [
+      { id: 1, label: 'Item 1' },
+      { id: 2, label: 'Item 2' }
+    ],
+    ['list__item','list__item--active'],
+    activeIndex
+  ]
 );
 
 // Outputs
 
 <ul class="list__wrapper">
   <li id="1" class="list__item list__item--active">
-    Item 1
-  </li>
+    Item 1</li>
   <li id="2" class="list__item">
-    Item 2
-  </li>
+    Item 2</li>
 </ul>
 ```
 
