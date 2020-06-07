@@ -59,9 +59,9 @@ taggedTemplate(`
   FROM {from}
   WHERE {where}
   LIMIT {start}, {end}
-`
-  ,{ select: 'firstname', as: asCol, from, where, start, end }
-  ,{ from: fromCondition }
+`,
+  { select: 'firstname', as: asCol, from, where, start, end },
+  { from: fromCondition },
 );
 
 
