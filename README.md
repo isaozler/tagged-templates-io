@@ -29,32 +29,10 @@ taggedTemplate(pattern, values, conditions); // string
 | ``` (key1, key2) => `text ${key1} and ${key2}` ``` | `[['val 1.1','val 1.2'],['val 2.1', 'val 2.2']]` | `[true, false]` | `'text val 1.1 and val 2.2'` |
 
 
-## Basic Usage
 
-```js
-taggedTemplate(`template-string`, values, conditions?);
-```
+# Examples
 
-### Examples
-
-
-## Basic
-```js
-taggedTemplate(`Hello {0}`, 'world');
-
-// Hello World
-
-taggedTemplate(`Hello {target}`, { target: 'World'});
-
-// Hello World
-
-taggedTemplate(`Hello {target}`, { target: ['World', 'Mars']}, { target: false });
-
-// Hello Mars
-
-```
-
-## Html class names
+## **Html class names**
 ```js
 const isFirstNavItem = index === 0;
 
@@ -72,7 +50,7 @@ const className = taggedTemplate(
 
 ```
 
-## SQL
+## **SQL**
 ```js
 const isClient = true;
 const as = 'age';
@@ -94,7 +72,7 @@ const a = taggedTemplate(`
 ```
 
 
-## Render HTML
+## **Render HTML**
 
 ```js
 
