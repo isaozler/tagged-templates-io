@@ -1,6 +1,6 @@
 {
   "name": "tagged-templates-io",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Reusable dynamic tagged templates",
   "main": "src/index",
   "scripts": {

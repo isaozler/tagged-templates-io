@@ -88,6 +88,7 @@ function taggedTemplates(f, v, c) {
           return Object.keys(ddd).reduce((accD, dkk) => {
             const strRegExPattern = `\\{${dkk}\\}`;
             const occ = fn.match(new RegExp(strRegExPattern, 'g'));
+            if (!occ) return accD;
             return accD = occ.reduce((acc, matchString) => {
               const dK = matchString.slice(1, -1);
               return acc = acc.replace(matchString, ddd[dK]);
@@ -137,6 +138,7 @@ function taggedTemplates(f, v, c) {
             let aDk;
             const strRegExPattern = `\\{${dkk}\\}`;
             const occ = fn.match(new RegExp(strRegExPattern, 'g'));
+            if (!occ) return accD;
             return accD = occ.reduce((acc, matchString) => {
               const dK = matchString.slice(1, -1);
               if (!!ddd[dK] && Array.isArray(ddd[dK]) && checkBool(condition[dK])) {
@@ -160,6 +162,7 @@ function taggedTemplates(f, v, c) {
         return Object.keys(ddd).reduce((accD, dkk) => {
           const strRegExPattern = `\\{${dkk}\\}`;
           const occ = fn.match(new RegExp(strRegExPattern, 'g'));
+          if (!occ) return accD;
           return accD = occ.reduce((acc, matchString) => {
             const dK = matchString.slice(1, -1);
             return acc = acc.replace(matchString, ddd[dK]);
