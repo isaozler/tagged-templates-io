@@ -147,7 +147,11 @@ function taggedTemplates(f, v, c) {
               } else {
                 if (!!ddd[dK] && Array.isArray(ddd[dK])) {
                   const [tV, fV] = ddd[dK];
-                  aDk = !!condition[dK] ? tV : fV;
+                  if (typeof condition[dK] === 'number') {
+                    aDk = ddd[dK][condition[dK]] || (!!condition[dK] ? tV : fV)
+                  } else {
+                    aDk = !!condition[dK] ? tV : fV;
+                  }
                 } else if (!!ddd[dK] || !isNaN(ddd[dK])) {
                   aDk = ddd[dK];
                 }
